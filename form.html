@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Choose Your Class Activities!</title>
+<style>
+body {
+  background-color: turquoise;
+}
+
+h1 {
+  color: blue;
+}
+label {
+  color: red;
+}
+</style>
+</head>
+<body>
+
+<h1>What activities would you like to do in class?</h1>
+
+<img src="images/fun-school-activities.jpg" alt="Students enjoying fun activities in class" style="width:300px;height:200px;">
+
+<form action="mailto:salimharunani@gmail.com" method="post" enctype="text/plain" onsubmit="return confirmSubmit()">
+  <label for="name">Your Name:</label><br>
+  <input type="text" id="name" name="name"><br><br>
+
+  <label for="date_of_birth">Date of Birth (YYYY-MM-DD):</label><br>
+  <input type="date" id="date_of_birth" name="date_of_birth" required><br><br>
+
+  <label for="email">Your Email:</label><br>
+  <input type="email" id="email" name="email" required><br><br>
+
+  
+  <label for="activities">Select your favorite activities:</label><br>
+  <input type="checkbox" id="games" name="activities" value="games"> Play games<br>
+  <input type="checkbox" id="experiments" name="activities" value="experiments"> Conduct experiments<br>
+  <input type="checkbox" id="art" name="activities" value="art"> Create art projects<br>
+  <input type="checkbox" id="music" name="activities" value="music"> Make music<br>
+  <input type="checkbox" id="reading" name="activities" value="reading"> Read books<br>
+  <input type="checkbox" id="writing" name="activities" value="writing"> Write stories or poems<br>
+  <input type="checkbox" id="coding" name="activities" value="coding"> Learn to code<br>
+  <input type="checkbox" id="outdoor" name="activities" value="outdoor"> Do outdoor activities<br>
+  <input type="checkbox" id="other" name="activities" value="other"> Other (please specify):<br><br>
+
+  <label for="other_activities">If you chose "Other," please describe:</label><br>
+
+  <label for="other_activities">If you chose "Other," please describe:</label><br>
+  <textarea id="other_activities" name="other_activities" rows="5" cols="40"></textarea><br><br>
+
+  <input type="submit" value="Submit Your Choices">
+</form>
+<script>
+function confirmSubmit() {
+  return confirm("Are you sure you want to submit your choices? Please double-check your answers before submitting.");
+}
+</script>
+</body>
+</html>
